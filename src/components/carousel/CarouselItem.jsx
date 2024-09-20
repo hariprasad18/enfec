@@ -68,15 +68,15 @@ const CarouselItem = ({
           </div>
         </div>
       ) : (
-        <div className='smallCarousel'>
-          <div className='smallCtopSection' style={{ backgroundImage: `url(${topImage})` }}>
-            <p className='new'>New</p>
-            <p className='smallImageTitle'>{title}</p>
-          </div>
-          <div className='smallCbottomSection'>
-            <HomeDetailBox />
-          </div>
-        </div>
+        <div className='smallCarouselItem'>
+  <div className='smallCtopSection' style={{ backgroundImage: `url(${topImage})` }}>
+    <p className='new'>New</p>
+    <p className='smallImageTitle'>{title}</p>
+  </div>
+  <div className='smallCbottomSection'>
+    <HomeDetailBox />
+  </div>
+</div>
       )}
     </>
   );

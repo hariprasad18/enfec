@@ -33,6 +33,16 @@ export default function SwiperCarousel({ perView = 1, skip = 1, data = [] }) {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
+        breakpoints={{
+          368: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          800: {
+            slidesPerView: 4.5,
+            spaceBetween: 10,
+          },
+        }}
         modules={[Navigation]}
         slidesPerView={perView}
         slidesPerGroup={skip}
