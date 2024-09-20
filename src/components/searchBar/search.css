@@ -1,0 +1,135 @@
+.banner {
+    background-image: url('../../assets/images/large.webp');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 75vh;
+    overflow: hidden; 
+    margin: 0 1%;
+    border-radius: 1rem;
+    filter: brightness(1) saturate(1.1);
+}
+
+.searchContent, .banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bannerQuote {
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.btnSpan {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 1rem;
+    margin: 7vh auto 0;
+}
+
+/* Tab Button Styles */
+.tabBtns {
+    background-color: transparent;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 0.7rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.tabBtns:hover,
+.tabBtns.active {
+    background-color: white;
+    color: #0D7C66;
+}
+
+/* Search Bar Styles */
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    width: 25rem;
+    margin: 5vh auto;   
+}
+
+.searchInput {
+    width: 100%; 
+    padding: 1rem;
+    padding-left: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem 0 0 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; 
+    transition: width 0.3s ease, padding-left 0.3s ease;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1rem; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+}
+
+.searchBtn, .cancelBtn {
+    background-color: #D93C23;
+    border: none;
+    color: white;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.cancelBtn {
+    padding: 0.9rem;
+}
+
+/* Suggestions Styles */
+.suggestions {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+    top: 80%;
+    left: 0;
+    width: 100%; 
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+.suggestions li {
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    color: rgb(28, 143, 133);
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .searchBarContainer {
+        width: 100%; 
+    }
+    
+    .bannerQuote {
+        font-size: 2rem; 
+    }
+}
