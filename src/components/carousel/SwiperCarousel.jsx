@@ -36,10 +36,12 @@ export default function SwiperCarousel({ perView = 1, skip = 1, data = [] }) {
         breakpoints={{
           368: {
             slidesPerView: 2,
+            slidesPerGroup:2,
             spaceBetween: 10,
           },
           800: {
-            slidesPerView: 4.5,
+            slidesPerView: perView,
+            slidesPerGroup:perView,
             spaceBetween: 10,
           },
         }}
