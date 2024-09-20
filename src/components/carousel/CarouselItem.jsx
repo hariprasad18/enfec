@@ -58,11 +58,7 @@ const CarouselItem = ({
         <div className='carouselItem dualCarouselItem'>
           <div className='topSection' style={{ backgroundImage: `url(${topImage})` }}>
             <h2>{titleTop}</h2>
-<<<<<<< HEAD
-            {topImage  && <RenderButton label="View Homes" />}
-=======
-            {topImage && !homeDetails && <RenderButton label="View Homes" />}
->>>>>>> ed465798f5d4796b2151670e2413700f82c1b735
+            {topImage && <RenderButton label="View Homes" />}
             {text1 && <RenderTextBox text={text1} />}
           </div>
           <div className='bottomSection' style={{ backgroundImage: `url(${bottomImage})` }}>
